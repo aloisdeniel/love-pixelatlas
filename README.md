@@ -28,22 +28,26 @@ Just copy the `pixelatlas.lua` file somewhere in your projects (maybe inside a `
 
 ## API
 
+### Property `pixelmap.isCache = true`
+
+Indicates whether the loaded atlas should be saved as lua table in the folder `.pixelatlas/<path_img>.lua` of the local storage for quicker next load.
+
 ### Function `pixelatlas.register(color)`
 
-Registers the quad separator color
+Registers the quad separator color. Default is `#ff0000ff`.
+
+* *arg* `color` - `string` - `required` : the RGBA hexadecimal color of the separators pixel color (ex: `"#ff2200ff"`).
 
 ### Function `pixelatlas.load(path) : Atlas`
 
 Loads an image, reads each of its pixels and generate all quads from the atlas.
 
 * *arg* `path` - `string` - `required` : path the image containing the atlas.
-* *returns* An `Atlas` table
-
-
+* *returns* An `Atlas` table with an array of quads
 
 ## Roadmap / Ideas
 
-* Ad unit tests
+* Add unit tests
 
 ## Copyright and license
 
