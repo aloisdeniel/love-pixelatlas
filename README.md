@@ -9,7 +9,7 @@ local pixelatlas = require('pixelatlas')
 
 pixelatlas.register("#86a36bff")
 
-local atlas = pixelatlas.load('atlas.png')
+local image, quads = pixelatlas.load('atlas.png')
 
 --[[
 {
