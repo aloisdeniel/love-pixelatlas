@@ -5,7 +5,7 @@ A LÖVE texture atlas loader from pixel information of an image.
 ## Example
 
 ```lua
-local pixelatlas = require('pixelmap')
+local pixelatlas = require('pixelatlas')
 
 pixelatlas.register("#86a36bff")
 
